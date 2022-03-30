@@ -1,0 +1,16 @@
+from tkinter import*
+root=Tk()
+root.geometry("600x600")
+root.resizable(0,0)
+l1=Label(root,text="Enter Name",font=("Arial",20))
+l1.grid(row=0,column=0,pady=25)
+e1=Entry(root,font=("Arial",20),fg="black")
+e1.grid(row=0,column=1,pady=25)
+l2=Label(root,text="Password",font=("Arial",20))
+l2.grid(row=1,column=0,pady=25)
+e2=Entry(root,font=("Arial",20),fg="black",show="*")
+e2.grid(row=1,column=1,pady=25)
+b1=Button(root,text="Login",font=("Arial",20),fg="red")
+b1.grid(row=3,column=1,columnspan=2)
+root.mainloop()
+
